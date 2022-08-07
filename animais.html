@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <link rel="shortcut icon" href="imagens/favicon-32x32.png">
+         <title>Zoológico de Guarulhos</title>
+
+         <style>
+             .main_animais
+             {
+                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+             }
+             .main_div1
+             {
+                 display: flex;
+                 justify-content: center;
+                 background-image: linear-gradient(green,rgb(10, 168, 10), green);
+                 margin-bottom: 30px;
+             }
+             .main_div1_1
+             {
+                 display: flex;
+                 justify-content: center;
+                 background-color: yellow;
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+                 border: 2px solid white;
+             }
+             .main_div1_2
+             {
+                 background-color: transparent;
+                 width: 300px;
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+                 padding-left: 20px;
+                 padding-right: 20px;
+                 border: 2px solid white;
+             }
+
+             .main_div2
+             {
+                 display: flex;
+                 justify-content: center;
+                 background-image: linear-gradient(green,rgb(10, 168, 10), green);
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+             }
+             .main_div2_1
+             {
+                 display: flex;
+                 justify-content: center;
+                 background-color: yellow;
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+                 border: 2px solid white;
+             }
+
+             .main_div3
+             {
+                 display: flex;
+                 justify-content: center;
+                 background-image: linear-gradient(green,rgb(10, 168, 10), green);
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+             }
+             .main_div3_1
+             {
+                 display: flex;
+                 justify-content: center;
+                 background-color: yellow;
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+                 border: 2px solid white;
+             }
+
+             .main_div4
+             {
+                 display: flex;
+                 justify-content: center;
+                 background-image: linear-gradient(green,rgb(10, 168, 10), green);
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+             }
+             .main_div4_1
+             {
+                 display: flex;
+                 justify-content: center;
+                 background-color: yellow;
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+                 border: 2px solid white;
+             }
+
+             .main_div5
+             {
+                 display: flex;
+                 justify-content: center;
+                 background-image: linear-gradient(green,rgb(10, 168, 10), green);
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+             }
+             .main_div5_1
+             {
+                 display: flex;
+                 justify-content: center;
+                 background-color: yellow;
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+                 border: 2px solid white;
+             }
+
+             .main_div6
+             {
+                 display: flex;
+                 justify-content: center;
+                 background-image: linear-gradient(green,rgb(10, 168, 10), green);
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+             }
+             .main_div6_1
+             {
+                 display: flex;
+                 justify-content: center;
+                 background-color: yellow;
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+                 border: 2px solid white;
+             }
+
+             .main_div7
+             {
+                 display: flex;
+                 justify-content: center;
+                 background-image: linear-gradient(green,rgb(10, 168, 10), green);
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+             }
+             .main_div7_1
+             {
+                 display: flex;
+                 justify-content: center;
+                 background-color: yellow;
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+                 border: 2px solid white;
+             }
+
+             .main_div8
+             {
+                 display: flex;
+                 justify-content: center;
+                 background-image: linear-gradient(green,rgb(10, 168, 10), green);
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+             }
+             .main_div8_1
+             {
+                 display: flex;
+                 justify-content: center;
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+                 border: 2px solid white;
+             }
+
+             .main_div9
+             {
+                 display: flex;
+                 justify-content: center;
+                 background-image: linear-gradient(green,rgb(10, 168, 10), green);
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+             }
+             .main_div9_1
+             {
+                 display: flex;
+                 justify-content: center;
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+                 border: 2px solid white;
+             }
+
+             .main_div10
+             {
+                 display: flex;
+                 justify-content: center;
+                 background-image: linear-gradient(green,rgb(10, 168, 10), green);
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+             }
+             .main_div10_1
+             {
+                 display: flex;
+                 justify-content: center;
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+                 border: 2px solid white;
+             }
+
+             .main_titulo1
+             {
+                 color: green;
+                 text-align: center;
+                 font-size: 35px;
+                 padding-top: 10px;
+                 padding-bottom: 10px;
+             }
+             .main_titulo2
+             {
+                 padding-top: 20px;
+                 color: white;
+                 text-align: center;
+                 font-size: 25px;
+             }
+             .main_paragrafo
+             {
+                 padding-top: 20px;
+                 color: white;
+                 text-align: justify;
+                 font-size: 15px;
+             }
+             .main_img
+             {
+                 height: 400px;
+                 width: 600px;
+             }
+         </style>
+
+    </head>
+    <body>
+
+        <header class="cabecalho">
+               <img class="cabecalho_imagem" src="imagens/Capa_Zoologico_Guarulhos.jpg" alt="Capa_Zoologico_Guarulhos">
+            <nav class="cabecalho_menu">
+               <a href="home.html">
+                   <button class="cabecalho_botao_menu">Home</button>
+               </a>
+               <a href="historia.html">
+                   <button class="cabecalho_botao_menu">História</button>
+               </a>
+               <a href="animais.html">
+                   <button class="cabecalho_botao_menu">Animais</button>
+               </a>
+               <a href="duvidas.html">
+                   <button class="cabecalho_botao_menu" >Dúvidas</button>
+               </a>
+               <a href="contato.html">
+                   <button class="cabecalho_botao_menu" >Contato</button>
+               </a>
+            </nav>
+        </header>
+
+        <main class="main_animais">
+
+            <h1 class="main_titulo1">Animais do Zoológico</h1>
+
+            <div class="main_div1">
+
+                <div class="main_div1_1">
+                    <img class="main_img" src="imagens_animais/animal_1.jpg" alt="">
+                </div>
+
+                <div class="main_div1_2">
+                    <h2 class="main_titulo2">Mutum do sudeste (Crax blumenbachii)</h2>
+                    <p class="main_paragrafo">Espécie endêmica da Mata Atlântica de baixada, passa a maior parte do tempo no solo, onde se alimenta de frutos e sementes, e se empoleira para dormir e nidificar. Atualmente é encontrado apenas em 11 localidades em Minas Gerais, Espírito Santo e Bahia, habitando matas primárias ou em avançada regeneração, sendo muito sensível à caça, alteração e fragmentação de seu habitat.</p>
+                </div>
+
+            </div>
+
+            <div class="main_div2">
+
+                <div class="main_div2_1">
+                    <img class="main_img" src="imagens_animais/animal_2.jpg" alt="">
+                </div>
+
+                <div class="main_div1_2">
+                    <h2 class="main_titulo2">Gato do mato pequeno (Leopardus tigrinus)</h2>
+                    <p class="main_paragrafo">O menor felino brasileiro é um animal solitário, de hábito noturno, que habita o solo, mas é capaz de escalar árvores com facilidade, sendo encontrado em todos os biomas do Brasil. A gestação de cerca de 2 meses gera apenas um filhote. Embora possa adaptar-se a áreas modificadas pelo homem, a redução das áreas naturais ameaça a sobrevivência da espécie.</p>
+                </div>
+
+            </div>
+
+            <div class="main_div3">
+
+                <div class="main_div3_1">
+                    <img class="main_img" src="imagens_animais/animal_3.jpg" alt="">
+                </div>
+
+                <div class="main_div1_2">
+                    <h2 class="main_titulo2">Onça pintada (Panthera onca)</h2>
+                    <p class="main_paragrafo">Maior felídeo das Américas, ocorre por todo o Brasil, ocupando florestas densas da Amazônia e Mata Atlântica, áreas de Cerrado e Caatinga e o Pantanal. Necessitam grandes áreas com boa quantidade de presas para viver, sendo a redução de habitat e o isolamento ameaças à espécie. Os conflitos devido a predação e os atropelamentos são também fatores de impacto sobre as populações.</p>
+                </div>
+
+            </div>
+
+            <div class="main_div4">
+
+                <div class="main_div4_1">
+                    <img src="imagens_animais/animal_4.jpg" alt="">
+                </div>
+
+                <div class="main_div1_2">
+                    <h2 class="main_titulo2">Tamanduá-bandeira (Myrmecophaga tridactyla)</h2>
+                    <p class="main_paragrafo">Rosto alongado e fino, grande língua com saliva pegajosa e garras fortes são evidências da adaptação do tamanduá a uma alimentação exclusiva à base de formigas e cupins. Solitário, encontra parceiros apenas para a reprodução. Nasce um filhote após gestação de 190 dias. Habita cerrados, campos e florestas úmidas das Américas do Sul e Central. A espécie é vítima de atropelamentos, incêndios e caça ilegal.</p>
+                </div>
+
+            </div>
+
+            <div class="main_div5">
+
+                <div class="main_div5_1">
+                    <img src="imagens_animais/animal_5.jpg" alt="">
+                </div>
+
+                <div class="main_div1_2">
+                    <h2 class="main_titulo2">Anta <br> (Tapirus terrestris)</h2>
+                    <p class="main_paragrafo">O maior mamífero terrestre do Brasil, atingindo até 300 kg. Possui narina longa e flexível semelhante a uma tromba. É excelente nadadora. Alimenta-se de folhas e frutos, sendo importante dispersora de sementes. Filhotes são manchados de branco para se camuflar. Possui hábito predominantemente noturno. Desmatamentos e caça ilegal são as principais ameaças à espécie.</p>
+                </div>
+
+            </div>
+
+            <div class="main_div6">
+
+                <div class="main_div6_1">
+                    <img src="imagens_animais/animal_6.jpg" alt="">
+                </div>
+
+                <div class="main_div1_2">
+                    <h2 class="main_titulo2">Lobo guará (Chrysocyon brachyurus)</h2>
+                    <p class="main_paragrafo">É uma espécie de pernas longas, coloração alaranjada e orelhas grandes, que habita ambientes abertos como campos e cerrados. Ocorre no Brasil central, áreas do sudeste e sul. Alimentam-se de frutos e pequenos vertebrados, sendo injustamente acusados de predação de aves domésticas, o que leva a sua perseguição e abate, o que, aliado a atropelamentos, ameaça a espécie.</p>
+                </div>
+
+            </div>
+
+            <div class="main_div7">
+
+                <div class="main_div7_1">
+                    <img src="imagens_animais/animal_7.jpg" alt="">
+                </div>
+
+                <div class="main_div1_2">
+                    <h2 class="main_titulo2">Arara Canindé (Ara ararauna)</h2>
+                    <p class="main_paragrafo">Habita florestas úmidas, matas de galeria, buritizais e palmais diversos. Também conhecida como arara amarela, mede cerca de 80 cm. Migra em certas épocas do ano, em busca de alimento. Desloca-se grandes distancias durante o dia, alimentando-se basicamente de sementes, frutas e nozes. Uma das araras mais apreciadas em cativeiro, sendo este o principal motivo de ameaça.</p>
+                </div>
+
+            </div>
+
+            <div class="main_div8">
+
+                <div class="main_div8_1">
+                    <img class="main_img" src="imagens_animais/animal_8.jpg" alt="">
+                </div>
+
+                <div class="main_div1_2">
+                    <h2 class="main_titulo2">Onça parda <br> (Puma concolor)</h2>
+                    <p class="main_paragrafo">Segundo maior felídeo das Américas, é encontrada em todos os biomas brasileiros. Animal de hábitos noturnos e terrestres, escala árvores com facilidade. Pode gerar de 2 a 4 filhotes em gestação de cerca de 90 dias. A caça, o desmatamento e fragmentação de áreas naturais, a redução da disponibilidade de presas e os atropelamentos são ameaças à sobrevivência da espécie.</p>
+                </div>
+
+            </div>
+
+            <div class="main_div9">
+
+                <div class="main_div9_1">
+                    <img class="main_img" src="imagens_animais/animal_9.jpg" alt="">
+                </div>
+
+                <div class="main_div1_2">
+                    <h2 class="main_titulo2">Jiboia-constritora (Boa constrictor)</h2>
+                    <p class="main_paragrafo">A jiboia-constritora, ou simplesmente jiboia, é uma espécia de serpente grande e não peçonhenta que é frequentemente mantida e reproduzida em cativeiro. A jiboia é membro da família Boidae e encontrada em regiões tropicais da América do Norte, Central e do Sul, assim como em algumas ilhas no Caribe.</p>
+                </div>
+
+            </div>
+
+            <div class="main_div10">
+
+                <div class="main_div10_1">
+                    <img class="main_img" src="imagens_animais/animal_10.jpg" alt="">
+                </div>
+
+                <div class="main_div1_2">
+                    <h2 class="main_titulo2">Jacaré do papo amarelo <br> (Caiman latirostris)</h2>
+                    <p class="main_paragrafo">O Jacaré-de-papo-amarelo é um réptil crocodiliano amplamente distribuído pelo sudeste da América do Sul, ocorrendo em qualquer ecossistema associado à água nas bacias dos rios Paraná, Paraguai, Uruguai e São Francisco, sendo comum desde o extremo leste do Brasil até o Uruguai. Também ocorre em ecossistemas costeiros, como mangues. São conhecidos por este nome pois, durante a fase do acasalamento, estes animais costumam ficar com a área do papo amarelada.</p>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer class="rodape">
+                 <div class="rodape_div">
+
+                     <a target="_blank" href="https://www.instagram.com/zooguarulhos/">
+
+                         <img class="rodape_logo" src="imagens/Logo2.png" alt="Logo Instagram">
+
+                     </a>
+
+                     <a target="_blank" href="https://twitter.com/PrefGru_Oficial">
+
+                         <img class="rodape_logo" src="imagens/logo_twitter.png" alt="Logo Twitter">
+
+                     </a>
+
+                     <a target="_blank" href="https://www.facebook.com/zoologico.guarulhos/about/?ref=page_internal">
+
+                         <img class="rodape_logo" src="imagens/Logo4.png" alt="Logo Facebook">
+
+                     </a>
+
+                 </div>
+
+                 <img class="rodape_imagem2" src="imagens/logo_prefeitura_m.png" alt="Logo Prefeitura Guarulhos">
+                 <img class="rodape_imagem3" src="imagens/silueta_animal_background.png" alt="Silueta Floresta e Animais">
+        </footer>
+
+    </body>
+</html>
