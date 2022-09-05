@@ -8,6 +8,7 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 /* Cabeçalho do Site */
 .cabecalho
 {
@@ -91,5 +92,11 @@ footer .rodape_imagem3
 {
     display: block;
     margin: auto;
+    width: 100%;
+}
+@media (max-width: 950px){
+    .cabecalho_imagem
+{
+    height: 100%;
     width: 100%;
 }
