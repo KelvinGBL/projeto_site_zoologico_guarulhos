@@ -10,7 +10,7 @@
 
          <style>
 
-             .main_home
+             main
              {
                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
              }
@@ -47,124 +47,118 @@
              {
                  color: white;
                  text-align: justify;
-                 padding-top: 5px;
-                 padding-bottom: 5px;
-                 padding-left: 20px;
-                 padding-right: 20px;
+                 text-indent: 1.5em;
+                 line-height: 1.5em;
+                 font-size: 1.2em;
              }
              .main_imagem
              {
-                 display: block;
-                 margin-left: auto;
-                 margin-right: auto;
-                 width: 950px;
-                 border-radius: 5px;
+                display: block;
+                width: 100%;
+                border-radius: 10px;
+                border: 5px solid white;
              }
              .main_imagem1
              {
-                 margin-left: 4px;
-                 margin-right: 4px;
+                 display: block;
                  border: 2px solid white;
-                 width: 400px;
+                 width: 100%;
+                 border-radius: 10px;
              }
-             .main_imagem2
+             main .conteiner1
              {
-                 margin-left: 4px;
-                 margin-right: 4px;
-                 border: 2px solid white;
-                 width: 400px;
+                background-image: linear-gradient(green,rgb(10, 168, 10), green);
+                max-width: 950px;
+                margin: auto;
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 20px;
              }
-             .main_div
-             {
-                 margin-bottom: 20px;
-             }
-             .main_div1
-             {
-                 display: flex;
-                 justify-content: center;
-                 margin-left: auto;
-                 margin-right: auto;
-                 background-image: linear-gradient(green,rgb(10, 168, 10), green);
-                 width: 950px;
-                 padding-top: 20px;
-                 padding-bottom: 20px;
-                 border-radius: 5px;
-             }
-             .main_div1_1
-             {
-                 text-align: center;
-                 justify-content: center;
-                 margin-left: auto;
-                 margin-right: auto;
-                 background-image: linear-gradient(green,rgb(10, 168, 10), green);
-                 width: 300px;
-                 border: 5px solid white;
-                 border-radius: 20px;
-             }
-             .main_div1_2
-             {
-                 text-align: center;
-                 justify-content: center;
-                 margin-left: auto;
-                 margin-right: auto;
-                 background-image: linear-gradient(green,rgb(10, 168, 10), green);
-                 width: 300px;
-                 border: 5px solid white;
-                 border-radius: 20px;
-             }
-             .main_div1_3
-             {
-                 text-align: center;
-                 justify-content: center;
-                 margin-left: auto;
-                 margin-right: auto;
-                 background-image: linear-gradient(green,rgb(10, 168, 10), green);
-                 width: 300px;
-                 border: 5px solid white;
-                 border-radius: 20px;
-             }
-             .main_div2
-             {
-                 margin-left: auto;
-                 margin-right: auto;
-                 background-image: linear-gradient(green,rgb(10, 168, 10), green);
-                 width: 950px;
-                 padding-top: 20px;
-                 padding-left: 20px;
-                 padding-right: 20px;
-                 padding-bottom: 20px;
-                 border-top-left-radius: 5px;
-                 border-top-right-radius: 5px;
-             }
-             .main_div3
+             main .conteiner2
              {
                  display: flex;
                  justify-content: center;
-                 margin-left: auto;
-                 margin-right: auto;
+                 margin: auto;
+                 flex: 1 1 800px;
+                 gap: 20px;
                  background-image: linear-gradient(green,rgb(10, 168, 10), green);
                  width: 950px;
+                 padding: 20px;
+                 border-radius: 10px;
              }
-             .main_div4
+             .main_box1
              {
-                 display: flex;
-                 justify-content: center;
-                 margin-left: auto;
-                 margin-right: auto;
+                 text-align: center;
                  background-image: linear-gradient(green,rgb(10, 168, 10), green);
-                 width: 950px;
-                 padding-top: 4px;
-                 padding-bottom: 20px;
-                 border-bottom-left-radius: 5px;
-                 border-bottom-right-radius: 5px;
-                 margin-bottom: 30px;
+                 width: 100%;
+                 border: 5px solid white;
+                 padding: 10px;
+                 border-radius: 10px;
              }
-
+             main .conteiner3{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 20px;
+                gap: 10px;
+                border-radius: 10px;
+                background-image: linear-gradient(green,rgb(10, 168, 10), green);
+                min-width: 300px;
+                max-width: 950px;
+                margin: auto;
+             }
+             .main_box2{
+                display: flex;
+                padding-top: 20px;
+                padding-bottom: 20px;
+             }
+             .main_box3{
+                display: flex;
+                gap: 10px;
+             }
+             .main_box4{
+                display: flex;
+                gap: 10px;
+                padding-bottom: 20px;
+             }
+             @media (max-width:965px){
+                main .conteiner1{
+                    border-radius: 0px;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+                .conteiner1 img{
+                    border-radius: 0px;
+                    border-left: 0px;
+                    border-right: 0px;
+                }
+                main .conteiner2{
+                    flex-wrap: wrap;
+                    width: 100%;
+                    border-radius: 0px;
+                }
+                .main_box1{
+                    height: 290px;
+                }
+                .main_box1 p{
+                    font-size: 1em;
+                }
+                .main_box3{
+                    flex-wrap: wrap;
+                }
+                main .conteiner3{
+                    border-radius: 0px;
+                }
+            }
+            @media (max-width: 500px){
+                .main_box4{
+                    flex-wrap: wrap;
+                }
+            }
          </style>
 
     </head>
     <body>
-
+        <!-- Cabeçalho do Site -->
         <header class="cabecalho">
                <img class="cabecalho_imagem" src="imagens/Capa_Zoologico_Guarulhos.jpg" alt="Capa_Zoologico_Guarulhos">
             <nav class="cabecalho_menu">
@@ -186,19 +180,20 @@
             </nav>
         </header>
 
-        <main class="main_home">
+        <!-- Conteúdo do Site -->
+        <main>
 
             <h1 class="main_titulo1">Bem vindo ao Zoológico de Guarulhos</h1>
 
-            <div class="main_div">
+            <div class="conteiner1">
 
                 <img class="main_imagem" src="imagens_home/ZooGuarulhosOLDER.jpg" alt="">
 
             </div>
 
-            <div class="main_div1">
+            <div class="conteiner2">
 
-                <div class="main_div1_1">
+                <div class="main_box1">
 
                     <img class="logo_home" src="imagens_home/icon-pesquisa.png" alt="logo_endereco">
                     <h2 class="main_titulo3">Pesquisa e Conservação</h2>
@@ -206,7 +201,7 @@
 
                 </div>
 
-                <div class="main_div1_2">
+                <div class="main_box1">
 
                     <img class="logo_home" src="imagens_home/icon-vegetacao.png" alt="logo_vegetação">
                     <h2 class="main_titulo3">Vegetação Nativa</h2>
@@ -214,7 +209,7 @@
                     
                 </div>
 
-                <div class="main_div1_3">
+                <div class="main_box1">
 
                     <img class="logo_home" src="imagens_home/icon-kids.png" alt="logo_kids">
                     <h2 class="main_titulo3">Atividades para as Crianças</h2>
@@ -226,44 +221,31 @@
 
             <h2 class="main_titulo2">Infraestrutura</h2>
 
-            <div class="main_div2">
+            <div class="conteiner3">
 
-                <p class="main_paragrafo">O parque possui 70 mil m2, uma pequena mata e seis lagos que abrigam animais de vida livre, como irerês, garças, teiús, saruês, bem-te-vis, sabiás, entre outros. O trabalho realizado pelo Zoológico de Guarulhos objetiva contribuir para a conservação da fauna brasileira, através da reprodução de espécies ameaçadas, da pesquisa científica e da educação para a conservação da biodiversidade, além de proporcionar momentos de lazer à população.</p>
-
-            </div>
-
-            <div class="main_div3">
-
-                <div class="main_div3_1">
-
-                    <img class="main_imagem1" src="imagens_contato/Novas Placas Zoológico_Foto1.jfif" alt="Novas Placas Zoológico_Foto1">
-
+                <div class="main_box2">
+                    <p class="main_paragrafo">O parque possui 70 mil m2, uma pequena mata e seis lagos que abrigam animais de vida livre, como irerês, garças, teiús, saruês, bem-te-vis, sabiás, entre outros. O trabalho realizado pelo Zoológico de Guarulhos objetiva contribuir para a conservação da fauna brasileira, através da reprodução de espécies ameaçadas, da pesquisa científica e da educação para a conservação da biodiversidade, além de proporcionar momentos de lazer à população.</p>
                 </div>
 
-                <div class="main_div3_2">
-
-                    <img class="main_imagem1" src="imagens_contato/Novas Placas Zoológico_Foto2.jfif" alt="Novas Placas Zoológico_Foto2">
-
+                <div class="main_box3">
+                    <div>
+                        <img class="main_imagem1" src="imagens_contato/Novas Placas Zoológico_Foto1.jfif" alt="Novas Placas Zoológico_Foto1">
+                    </div>
+                    <div>
+                        <img class="main_imagem1" src="imagens_contato/Novas Placas Zoológico_Foto2.jfif" alt="Novas Placas Zoológico_Foto2">
+                    </div>
                 </div>
 
-            </div>
-
-            <div class="main_div4">
-
-                <div class="main_div4_1">
-
-                    <img class="main_imagem2" src="imagens_contato/Novas Placas Zoológico_Foto3.jfif" alt="Novas Placas Zoológico_Foto3">
-
-                </div>
-
-                <div class="main_div4_2">
-
-                    <img class="main_imagem2" src="imagens_contato/Novas Placas Zoológico_Foto4.jfif" alt="Novas Placas Zoológico_Foto4">
-
+                <div class="main_box4">
+                    <div>
+                        <img class="main_imagem1" src="imagens_contato/Novas Placas Zoológico_Foto3.jfif" alt="Novas Placas Zoológico_Foto3">
+                    </div>
+                    <div>
+                        <img class="main_imagem1" src="imagens_contato/Novas Placas Zoológico_Foto4.jfif" alt="Novas Placas Zoológico_Foto4">
+                    </div>
                 </div>
 
             </div>
-            
         </main>
         
         <!-- Rodapé do Site -->
