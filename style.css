@@ -14,17 +14,21 @@ header
 {
     background-color: white;
 }
-.cabecalho_imagem
-{
-    height: 350px;
-    width: 950px;
+.cabecalho_imagem{
     display: block;
-    margin: auto;
+    width: 100%;
+    object-fit: fill;
 }
 .cabecalho_menu
 {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: linear-gradient(rgb(23, 192, 23), green);
+    height: 80px;
+}
+.cabecalho_menu i{
+    display: none;
 }
 .cabecalho_botao_menu
 {
@@ -93,10 +97,19 @@ footer .rodape_imagem3
     margin: auto;
     width: 100%;
 }
-@media (max-width: 965px){
-    .cabecalho_imagem
-{
-    height: 350px;
-    width: 100%;
-}
+@media (max-width: 880px){
+    .cabecalho_menu{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    .cabecalho_menu a{
+        display: none;
+    }
+    .cabecalho_menu i{
+        display: block;
+        font-size: 4em;
+        color: white;
+        cursor: pointer;
+    }
 }
