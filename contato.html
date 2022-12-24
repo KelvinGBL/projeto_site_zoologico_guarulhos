@@ -2,122 +2,14 @@
 <html lang="pt-br">
     <head>
 
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" type="text/css" href="style.css">
-         <link rel="shortcut icon" href="imagens/favicon-32x32.png">
-         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-         <title>Zoológico de Guarulhos</title>
-
-         <style>
-            main
-            {
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            }
-            .main_titulo1
-            {
-                color: green;
-                text-align: center;
-                font-size: 35px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-            }
-            .main_titulo2
-            {
-                color: green;
-                text-align: center;
-                font-size: 35px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-            }
-            .main_titulo3
-            {
-                color: white;
-                text-align: center;
-                font-size: 2em;
-                padding-top: 10px;
-                padding-bottom: 10px;
-            }
-            .main_paragrafo
-            {
-                color: white;
-                text-align: center;
-                font-size: 0.9em;
-                line-height: 1.5em;
-            }
-            .main_imagem1
-            {
-                margin-left: 4px;
-                margin-right: 4px;
-                border: 2px solid white;
-                width: 400px;
-            }
-            .main_imagem2
-            {
-                margin-left: 4px;
-                margin-right: 4px;
-                border: 2px solid white;
-                width: 400px;
-            }
-            .logo_contato
-            {
-                height: 80px;
-                width: 80px;
-            }
-            .main_conteiner{
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-                flex:  1 1 800px;
-                margin: auto;
-                background-image: linear-gradient(green,rgb(10, 168, 10));
-                min-width: 300px;
-                max-width: 950px;
-                padding: 20px;
-                border-radius: 10px;
-            }
-            .main_box1{
-                text-align: center;
-                background-image: linear-gradient(green,rgb(10, 168, 10));
-                width: 100%;
-                border: 5px solid white;
-                padding: 18px;
-                border-radius: 10px;
-            }
-            .main_conteiner2{
-                display: flex;
-                justify-content: center;
-                margin: auto;
-                background-image: linear-gradient(green,rgb(10, 168, 10), green);
-                min-width: 300px;
-                max-width: 950px;
-                height: 600px;
-                padding: 20px;
-                border-radius: 10px;
-            }
-            main iframe{
-                border-radius: 10px;
-                border: 5px solid white;
-                height: 100%;
-                width: 100%;
-            }
-            @media (max-width:965px){
-            .main_conteiner{
-                flex-wrap: wrap;
-                width: 100%;
-                border-radius: 0px;
-            }
-            .main_box1{
-                height: 275px;
-            }
-            .main_conteiner2{
-                border-radius: 0px;
-            }
-            .main_paragrafo{
-                font-size: 1em;
-            }
-            }
-         </style>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/contato.css">
+        <link rel="shortcut icon" href="imagens/favicon-32x32.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <title>Zoológico de Guarulhos</title>
 
     </head>
     <body>
@@ -193,26 +85,30 @@
 
         <!-- Rodapé do Site-->
         <footer>
-                 <div class="box">
+            <nav>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/zooguarulhos/">
+                            <img src="imagens/logo_instagram.png" alt="Logo Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/PrefGru_Oficial">
+                            <img src="imagens/logo_twitter.png" alt="Logo Twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/zoologico.guarulhos/about/?ref=page_internal">
+                            <img src="imagens/logo_facebook.png" alt="Logo Facebook">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
-                     <a target="_blank" href="https://www.instagram.com/zooguarulhos/">
-                         <img class="rodape_logo" src="imagens/Logo2.png" alt="Logo Instagram">
-                     </a>
-
-                     <a target="_blank" href="https://twitter.com/PrefGru_Oficial">
-                         <img class="rodape_logo" src="imagens/logo_twitter.png" alt="Logo Twitter">
-                     </a>
-
-                     <a target="_blank" href="https://www.facebook.com/zoologico.guarulhos/about/?ref=page_internal">
-                         <img class="rodape_logo" src="imagens/Logo4.png" alt="Logo Facebook">
-                     </a>
-
-                 </div>
-
-                 <img class="rodape_imagem2" src="imagens/logo_prefeitura_m.png" alt="Logo Prefeitura Guarulhos">
-                 <div class="conteinerSilueta">
-                    <img class="rodape_imagem3" src="imagens/silueta_animal_background.png" alt="Silueta Floresta e Animais">
-                </div>
+            <img class="rodape_imagem2" src="imagens/logo_prefeitura_m.png" alt="Logo Prefeitura Guarulhos">
+            <div class="conteinerSilueta">
+                <img class="rodape_imagem3" src="imagens/silueta_animal_background.png" alt="Silueta Floresta e Animais">
+            </div>
         </footer>
     </body>
 </html>

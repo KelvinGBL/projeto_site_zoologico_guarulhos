@@ -1,5 +1,4 @@
-*
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -65,12 +64,15 @@ footer{
     background-image: linear-gradient(rgb(23, 192, 8), green);
     margin-top: 40px;
 }
-footer .box{
+footer nav{
     display: flex;
     justify-content: center;
-    column-gap: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+footer ul{
+    display: flex;
+    list-style: none;
 }
 footer a{
     text-decoration: none;
@@ -78,7 +80,7 @@ footer a{
     width: 70px;
     border-radius: 50%;
 }
-footer .rodape_logo{
+footer a img{
     display: block;
     margin: auto;
     transition: 0.4s;
@@ -88,7 +90,7 @@ footer .rodape_logo{
     cursor: pointer;
     border-radius: 50%;
 }
-footer .rodape_logo:hover
+footer a img:hover
 {
     transition: 0.4s;
     border: 5px solid white;

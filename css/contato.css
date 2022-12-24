@@ -1,0 +1,107 @@
+main
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main_titulo1
+{
+    color: green;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main_titulo2
+{
+    color: green;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main_titulo3
+{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main_paragrafo
+{
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+.main_imagem1
+{
+    margin-left: 4px;
+    margin-right: 4px;
+    border: 2px solid white;
+    width: 400px;
+}
+.main_imagem2
+{
+    margin-left: 4px;
+    margin-right: 4px;
+    border: 2px solid white;
+    width: 400px;
+}
+.logo_contato
+{
+    height: 80px;
+    width: 80px;
+}
+.main_conteiner{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex:  1 1 800px;
+    margin: auto;
+    background-image: linear-gradient(green,rgb(10, 168, 10));
+    min-width: 300px;
+    max-width: 950px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.main_box1{
+    text-align: center;
+    background-image: linear-gradient(green,rgb(10, 168, 10));
+    width: 100%;
+    border: 5px solid white;
+    padding: 18px;
+    border-radius: 10px;
+}
+.main_conteiner2{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-image: linear-gradient(green,rgb(10, 168, 10), green);
+    min-width: 300px;
+    max-width: 950px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 10px;
+}
+main iframe{
+    border-radius: 10px;
+    border: 5px solid white;
+    height: 100%;
+    width: 100%;
+}
+@media (max-width:965px){
+.main_conteiner{
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 0px;
+}
+.main_box1{
+    height: 275px;
+}
+.main_conteiner2{
+    border-radius: 0px;
+}
+.main_paragrafo{
+    font-size: 1em;
+}
+}
