@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -24,8 +26,7 @@ header
     height: 100%;
     width: 100%;
 }
-.cabecalho_menu
-{
+.cabecalho_menu{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,21 +61,20 @@ header
 
 /* Rodapé do Site */
 footer{
-    position: relative;
     background-image: linear-gradient(rgb(23, 192, 8), green);
     margin-top: 40px;
 }
-footer nav{
+footer ul{
     display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 1em;
+    list-style: none;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-footer ul{
-    display: flex;
-    list-style: none;
-}
 footer a{
+    display: block;
     text-decoration: none;
     height: 70px;
     width: 70px;
@@ -85,8 +85,8 @@ footer a img{
     margin: auto;
     transition: 0.4s;
     border: 5px solid transparent;
-    height: 70px;
-    width: 70px;
+    height: 100%;
+    width: 100%;
     cursor: pointer;
     border-radius: 50%;
 }
@@ -115,6 +115,7 @@ footer .rodape_imagem3
     height: 100%;
     width: 100%;
 }
+/* Página Responsiva */
 @media (max-width: 880px){
     .cabecalho_menu{
         display: flex;
